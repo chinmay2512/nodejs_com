@@ -1,0 +1,11 @@
+{
+  "name": "social-mail-server-docker-container",
+  "version": "1.0.0",
+  "description": "Single Instance with NodeJS, LetsEncrypt, ClamAV, Docker Container",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
