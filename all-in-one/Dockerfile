@@ -1,9 +1,9 @@
 FROM postgres:alpine3.18 as db
-VOLUME /app-data
 ENV PGDATA /app-data
 ENV POSTGRES_PASSWORD $SocialMail2023
 FROM ghcr.io/social-mail/docker-node-clamav:main
-COPY --from=db /
+COPY --from=db / /
+VOLUME /app-data
 VOLUME /var/lib/clamav
 VOLUME /app-files
 WORKDIR /app
