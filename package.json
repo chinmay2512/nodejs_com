@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Single Instance with NodeJS, LetsEncrypt, ClamAV, Docker Container",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --enable-source-maps ./index.js"
   },
   "author": "",
   "license": "ISC"
