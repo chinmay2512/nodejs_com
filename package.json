@@ -1,6 +1,6 @@
 {
   "name": "social-mail-server-docker-container",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Single Instance with NodeJS, LetsEncrypt, ClamAV, Docker Container",
   "main": "index.js",
   "type": "module",
