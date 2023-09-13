@@ -1,4 +1,4 @@
-FROM docker pull postgres:alpine3.18 as db
+FROM postgres:alpine3.18 as db
 VOLUME /app-data
 ENV PGDATA /app-data
 ENV POSTGRES_PASSWORD $SocialMail2023
@@ -21,5 +21,5 @@ ENV SOCIAL_MAIL_DB_USER postgres
 ENV SOCIAL_MAIL_DB_PASSWORD $SocialMail2023
 ENV SOCIAL_MAIL_STORAGE volume
 ENV SOCIAL_MAIL_STORAGE_PATH /app-files
-EXPOSE 80 443 25 5432
+EXPOSE 80 443 25
 ENTRYPOINT ["/sbin/tini", "--", "npm", "start"]
