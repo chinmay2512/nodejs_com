@@ -1,7 +1,6 @@
 FROM ghcr.io/social-mail/docker-node-clamav:main
 VOLUME /var/lib/clamav
-VOLUME /data/cert
-VOLUME /data/files
+VOLUME /data
 WORKDIR /app
 COPY package*.json ./
 COPY index.js ./
