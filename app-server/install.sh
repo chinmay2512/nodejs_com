@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 docker image prune -f
 docker volume prune -f
 docker builder prune -a -f
